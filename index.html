@@ -11,6 +11,7 @@
         margin: 10px;
         border: 1px solid #ccc;
         background-color: rgb(14, 153, 218);
+        overflow: auto;
       }
       .header,
       .main,
@@ -31,6 +32,12 @@
         width: auto;
         height: 100px;
       }
+      .menu li {
+        list-style-type: none;
+        float: left;
+        padding-left: 15%;
+        padding-bottom: 10px;
+      }
     </style>
   </head>
   <body>
@@ -42,7 +49,7 @@
     </header>
 
     <nav class="nav">
-      <ul>
+      <ul class="menu">
         <li><a href="#">Início</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Sobre</a></li>
