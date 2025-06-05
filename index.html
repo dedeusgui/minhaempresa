@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Minha Empresa</title>
+
+    <!-- CSS interno para estilização da página -->
     <style>
+      /* Barra de navegação fixa no topo */
       .nav {
         position: sticky;
         top: 0;
@@ -13,6 +16,8 @@
         background-color: rgb(14, 153, 218);
         overflow: auto;
       }
+
+      /* Estilo para header, conteúdo principal, barra lateral e rodapé */
       .header,
       .main,
       .sidebar,
@@ -20,7 +25,10 @@
         padding: 10px;
         margin: 10px;
         border: 1px solid #ccc;
+        background-color: white;
       }
+
+      /* Ícone do WhatsApp fixo no canto inferior direito */
       #whatsapp {
         position: fixed;
         bottom: 20px;
@@ -28,19 +36,80 @@
         height: 100px;
         width: 100px;
       }
+
+      /* Logo do cabeçalho */
       #logo {
         width: auto;
         height: 100px;
       }
+
+      /* Itens do menu */
       .menu li {
         list-style-type: none;
         float: left;
         padding-left: 15%;
         padding-bottom: 10px;
       }
+
+      /* Dropdown (menu suspenso) */
+      .dropdown {
+        display: block;
+        position: relative;
+        overflow: visible;
+        float: left;
+      }
+
+      /* Botão do dropdown */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: 1px solid #ccc;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      /* Conteúdo oculto do dropdown */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      /* Links dentro do dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* Efeito hover nos links do dropdown */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      /* Mostrar o conteúdo do dropdown quando passar o mouse */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* Plano de fundo da página */
+      body {
+        background: linear-gradient(to bottom, #8e9eab, #eef2f3);
+      }
     </style>
   </head>
+
   <body>
+    <!-- Cabeçalho com logo -->
     <header class="header">
       <img
         id="logo"
@@ -48,7 +117,19 @@
       />
     </header>
 
+    <!-- Barra de navegação -->
     <nav class="nav">
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+      <!-- Menu principal -->
       <ul class="menu">
         <li><a href="#">Início</a></li>
         <li><a href="#">Serviços</a></li>
@@ -57,131 +138,34 @@
       </ul>
     </nav>
 
+    <!-- Conteúdo principal -->
     <main class="main">
       <article class="content">
         <h2>Bem-vindo ao nosso site!</h2>
         <p>Oferecemos soluções personalizadas para seu negócio.</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est similique
-          officia blanditiis facilis tempora dicta reprehenderit maiores
-          quisquam, voluptatum ut ipsa porro? Dicta molestiae, exercitationem
-          illum impedit unde eius eum.
-        </p>
 
+        <!-- Parágrafos de texto (exemplos com Lorem Ipsum) -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+        <!-- Ícone do WhatsApp flutuante -->
         <div>
           <img
             id="whatsapp"
@@ -190,6 +174,7 @@
         </div>
       </article>
 
+      <!-- Barra lateral (aside) -->
       <aside class="sidebar">
         <h3>Notícias recentes</h3>
         <ul>
@@ -199,6 +184,7 @@
       </aside>
     </main>
 
+    <!-- Rodapé -->
     <footer class="footer">
       <p>© 2025 Minha Empresa. Todos os direitos reservados.</p>
     </footer>
