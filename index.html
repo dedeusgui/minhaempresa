@@ -13,8 +13,8 @@
         padding: 10px;
         margin: 10px;
         border: 1px solid #ccc;
-        background-color: rgb(14, 153, 218);
-        overflow: auto;
+        background-color: #0c4c98;
+        height: 75px;
       }
 
       /* Estilo para header, conteúdo principal, barra lateral e rodapé */
@@ -49,9 +49,9 @@
       /* Itens do menu */
       .menu li {
         list-style-type: none;
-        float: left;
-        padding-left: 15%;
+        padding: 10px;
         padding-bottom: 10px;
+        margin-right: 25px;
       }
 
       /* Dropdown (menu suspenso) */
@@ -68,7 +68,7 @@
         border: 1px solid #ccc;
         outline: none;
         color: white;
-        padding: 14px 16px;
+        padding: 10px;
         background-color: inherit;
         font-family: inherit;
         margin: 0;
@@ -106,7 +106,8 @@
 
       /* Plano de fundo da página */
       body {
-        background: linear-gradient(to right, #2683cf, #ff8800);
+        background: linear-gradient(to right, #0c4c98, #eb4c0c);
+        font-family: "Univers", sans-serif;
       }
 
       /* Estilo para o cabeçalho */
@@ -117,14 +118,36 @@
 
       /* Estilo para o rodapé */
       .footer {
+        color: white;
         text-align: center;
         text-shadow: 4px 4px 10px rgb(0, 0, 0);
       }
 
       /* Estilo para o título */
       #title {
+        color: white;
         text-align: center;
         text-shadow: 4px 4px 10px rgb(0, 0, 0);
+      }
+      .menu button {
+        font-size: 16px;
+        border: 1px solid #ccc;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+      }
+      #banner {
+        width: 100%;
+      }
+      .main p {
+        text-align: justify;
+      }
+      .content {
+        margin: 30px;
       }
     </style>
   </head>
@@ -141,51 +164,74 @@
 
     <!-- Barra de navegação -->
     <nav class="nav">
-      <!-- Dropdown Menu -->
-      <div class="dropdown">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-
       <!-- Menu principal -->
-      <ul class="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+      <div class="menu">
+        <ul>
+          <li class="dropdown" style="float: left">
+            <button class="dropbtn">Início</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="dropdown" style="float: left">
+            <button class="dropbtn">Serviços</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="dropdown" style="float: left">
+            <button class="dropbtn">Sobre</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+
+          <li class="dropdown" style="float: right">
+            <button class="dropbtn">Contato</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Conteúdo principal -->
     <main class="main">
       <article class="content">
-        <h2>Bem-vindo ao nosso site!</h2>
-        <p>Oferecemos soluções personalizadas para seu negócio.</p>
+        <img
+          id="banner"
+          src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPx-vblg5H5xDZ3JlxrYZ0xM70RABn2n95H-g06ErTevmk7K0kSNk-zU2ctFItFm5D9lOmC89-KnhGDUTR1DC78l__WaFI1VkeVPNgaHFvu7A=w1905-h945"
+        />
+        <h2>Bem-vindo ao SENAI!</h2>
 
         <!-- Parágrafos de texto (exemplos com Lorem Ipsum) -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <p>
+          O Serviço Nacional de Aprendizagem Industrial (SENAI) é uma das
+          maiores instituições de educação profissional e tecnológica da América
+          Latina. Fundado em 1942, o SENAI tem como missão promover a formação
+          de profissionais qualificados para a indústria, contribuindo para o
+          desenvolvimento econômico e social do Brasil. Com presença em todo o
+          território nacional, o SENAI oferece cursos de iniciação,
+          qualificação, aperfeiçoamento, técnicos e superiores em diversas áreas
+          industriais, além de atuar com educação a distância (EAD). Suas
+          unidades contam com infraestrutura moderna, laboratórios
+          especializados e parcerias com empresas de diversos setores. Além da
+          educação, o SENAI também apoia a inovação por meio de centros de
+          tecnologia, pesquisa aplicada e consultorias técnicas, ajudando
+          indústrias a se tornarem mais eficientes e competitivas. Reconhecido
+          pela excelência na formação profissional, o SENAI é referência quando
+          se fala em preparar jovens e adultos para o mercado de trabalho, com
+          alta taxa de empregabilidade entre seus alunos.
+        </p>
 
         <!-- Ícone do WhatsApp flutuante -->
         <div>
@@ -212,5 +258,3 @@
     </footer>
   </body>
 </html>
-
-<!-- editado por Guilherme de Deus -->
