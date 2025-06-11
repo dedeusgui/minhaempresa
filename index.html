@@ -17,46 +17,49 @@
     </header>
 
     <!-- Barra de navegação -->
-    <nav class="nav">
-      <!-- Menu principal -->
-      <div class="menu">
-        <ul>
-          <li class="dropdown" style="float: left">
-            <button class="dropbtn">Início</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown" style="float: left">
-            <button class="dropbtn">Serviços</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="dropdown" style="float: left">
-            <button class="dropbtn">Sobre</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-
-          <li class="dropdown" style="float: right">
-            <button class="dropbtn">Contato</button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </li>
-        </ul>
+   <nav class="nav">
+  <!-- Menu principal dividido em dois lados -->
+  <div class="menu nav-left">
+    <div class="dropdown" id="inicio">
+      <button class="dropbtn">Início</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
       </div>
-    </nav>
+    </div>
+
+    <div class="dropdown" id="servicos">
+      <button class="dropbtn">Serviços</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div class="dropdown" id="sobre">
+      <button class="dropbtn">Sobre</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu nav-right">
+    <div class="dropdown" id="contato">
+      <button class="dropbtn">Contato</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Conteúdo principal -->
     <main class="main">
@@ -88,6 +91,7 @@
         </p>
         <hr class="separador" />
         <!-- Cards de cursos  -->
+         <section class="cursos">
         <div class="card">
           <img src="img/31471262-68d7-4647-befb-fcd3f8d03dbc (1).png" />
           <div>
@@ -143,7 +147,7 @@
             <h2>Panificação</h2>
             <p>6 semestres</p>
           </div>
-        </div>
+         </section>
         <hr class="separador" />
 
         <!-- Ícone do WhatsApp flutuante -->
@@ -243,3 +247,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
